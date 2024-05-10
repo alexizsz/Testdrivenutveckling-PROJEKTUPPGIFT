@@ -1,4 +1,4 @@
-package se.reky.hakan.util;
+package se.reky.hakan;
 
 import se.reky.hakan.GameException;
 

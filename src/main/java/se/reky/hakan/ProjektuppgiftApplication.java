@@ -55,15 +55,10 @@ public class ProjektuppgiftApplication {
 	@Bean
 	public IOHandler ioHandler(Scanner scanner){
 		return new IOHandler(scanner);
-
 	}
 	@Bean
 	public PlayerInteraction playerInteraction(IOHandler ioHandler){
 		return new SimplePlayerInteraction(ioHandler);
 	}
-
-
-
-
 
 }
