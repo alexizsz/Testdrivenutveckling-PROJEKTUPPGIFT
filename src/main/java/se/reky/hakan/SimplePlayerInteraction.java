@@ -10,13 +10,14 @@ public class SimplePlayerInteraction implements PlayerInteraction {
     }
 
     @Override
-    public void setupPlayer(Player player) {
+    public String setupPlayer(Player player) {
         ioHandler.output("Please enter your name:");
         String playerName = ioHandler.nextLine();
         player.setName(playerName);
         player.setHp(10);  // Default health
         player.setDamage(7); // Default damage
         ioHandler.output(String.format("Hello %s, your adventure begins with %d HP and %d damage.", playerName, player.getHp(), player.getDamage()));
+        return playerName;
     }
 
     @Override

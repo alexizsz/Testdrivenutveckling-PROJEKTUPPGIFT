@@ -12,11 +12,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class JavaUtilScannerTest {
 
     @Test
-    @DisplayName("Test för att se att scannern fungerar som den ska")
+    @DisplayName("Scanner takes in correct input")
     public void testScannerReturnsExpectedText() {
-        String expectedText = "test data";
-        Scanner scanner = new Scanner(expectedText);
-        String actualText = scanner.nextLine();
-        assertEquals(expectedText, actualText);
+        String actualText = "test data";
+        Scanner scanner = new Scanner(actualText);
+        String expectedText = scanner.nextLine();
+        assertEquals(actualText, expectedText);
     }
 }
